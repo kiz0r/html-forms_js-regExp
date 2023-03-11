@@ -9,7 +9,90 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- connecting .js files -->
     <script defer src="./js/main.js"></script>
-    <title>Registration Form</title>
+    <title>Contact Form</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="formWrapper">
+        <h2 class="formTitle">Contact form</h2>
+        <p class="formDescription">
+          Please, fill in your information and we will send you the order.
+        </p>
+        <form action="" class="contactForm">
+          <label class="formLabel">
+            <span class="labelName">Your name</span>
+            <input
+              class="formInput"
+              type="text"
+              placeholder="First name"
+              name="first-name"
+              required
+              autofocus
+            />
+            <input
+              class="formInput"
+              type="text"
+              placeholder="Last name"
+              name="last-name"
+              required
+            />
+          </label>
+
+          <label class="formLabel">
+            <span class="labelName">Your email</span>
+            <input
+              class="formInput"
+              type="email"
+              placeholder="your_email@mail.com"
+              name="email"
+              required
+            />
+          </label>
+
+          <label class="formLabel">
+            <span class="labelName">Phone *</span>
+            <select name="country-code">
+              <option value="Ukraine">+380</option>
+              <option value="Czech">+420</option>
+            </select>
+            <input
+              name="phone-number"
+              class="formInput"
+              type="tel"
+              placeholder="123"
+            />
+            <input
+              name="phone-number"
+              class="formInput"
+              type="tel"
+              placeholder="456"
+            />
+            <input
+              name="phone-number"
+              class="formInput"
+              type="tel"
+              placeholder="789"
+            />
+          </label>
+
+          <label class="formLabel">
+            <span class="labelName">Message subject *</span>
+            <select class="formInput" name="mesage-subject">
+              <option value="change-order">Change order</option>
+              <option value="ask-question">Ask a question</option>
+              <option value="decline-order">Decline order</option>
+            </select>
+          </label>
+
+          <label class="formLabel">
+            <span class="labelName">Message *</span>
+            <textarea class="formInput" name="message" cols="30" rows="5">
+            </textarea>
+          </label>
+
+          <button class="submitBtn" type="submit">SUBMIT FORM</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
