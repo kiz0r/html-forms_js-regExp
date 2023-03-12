@@ -65,12 +65,18 @@ body {
   justify-content: space-between;
 }
 
-.formInput {
+.inputField {
+  outline: none;
   border-radius: 8px;
   border: 2px solid #fff;
   padding: 10px 5px;
   margin: 0 5px;
   width: 100%;
+}
+
+.inputField::placeholder {
+  color: #616a6b;
+  font-weight: 500;
 }
 
 .horLine {
@@ -91,9 +97,9 @@ body {
 }
 
 .valid {
-  background: green;
+  background: #1abc9c;
 }
 
 .invalid {
-  background: red;
+  background: #ec7063;
 }
