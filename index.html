@@ -12,7 +12,7 @@
     <title>Contact Form</title>
   </head>
   <body>
-    <main>
+    <main class="main">
       <div class="formWrapper">
         <h2 class="formTitle">Contact form</h2>
         <p class="formDescription">
@@ -21,76 +21,90 @@
         <form action="" class="contactForm">
           <label class="formLabel">
             <span class="labelName">Your name</span>
-            <input
-              class="formInput"
-              type="text"
-              placeholder="First name"
-              name="first-name"
-              required
-              autofocus
-            />
-            <input
-              class="formInput"
-              type="text"
-              placeholder="Last name"
-              name="last-name"
-              required
-            />
+            <div class="inputWrapper">
+              <input
+                class="formInput"
+                type="text"
+                placeholder="First name"
+                name="first-name"
+                required
+                autofocus
+              />
+              <input
+                class="formInput"
+                type="text"
+                placeholder="Last name"
+                name="last-name"
+                required
+              />
+            </div>
           </label>
 
           <label class="formLabel">
             <span class="labelName">Your email</span>
-            <input
-              class="formInput"
-              type="email"
-              placeholder="your_email@mail.com"
-              name="email"
-              required
-            />
+            <div class="inputWrapper">
+              <input
+                class="formInput"
+                type="email"
+                placeholder="your_email@mail.com"
+                name="email"
+                required
+              />
+            </div>
           </label>
 
           <label class="formLabel">
             <span class="labelName">Phone *</span>
-            <select name="country-code">
-              <option value="Ukraine">+380</option>
-              <option value="Czech">+420</option>
-            </select>
-            <input
-              name="phone-number"
-              class="formInput"
-              type="tel"
-              placeholder="123"
-            />
-            <input
-              name="phone-number"
-              class="formInput"
-              type="tel"
-              placeholder="456"
-            />
-            <input
-              name="phone-number"
-              class="formInput"
-              type="tel"
-              placeholder="789"
-            />
+            <div class="inputWrapper">
+              <select class="formInput" name="country-code">
+                <option value="Ukraine">+380</option>
+                <option value="Czech">+420</option>
+              </select>
+              <input
+                name="phone-number"
+                class="formInput"
+                type="tel"
+                placeholder="123"
+              />
+              <input
+                name="phone-number"
+                class="formInput"
+                type="tel"
+                placeholder="456"
+              />
+              <input
+                name="phone-number"
+                class="formInput"
+                type="tel"
+                placeholder="789"
+              />
+            </div>
           </label>
 
           <label class="formLabel">
             <span class="labelName">Message subject *</span>
-            <select class="formInput" name="mesage-subject">
-              <option value="change-order">Change order</option>
-              <option value="ask-question">Ask a question</option>
-              <option value="decline-order">Decline order</option>
-            </select>
+            <div class="inputWrapper">
+              <select class="formInput" name="mesage-subject">
+                <option value="change-order">Change order</option>
+                <option value="ask-question">Ask a question</option>
+                <option value="decline-order">Decline order</option>
+              </select>
+            </div>
           </label>
 
           <label class="formLabel">
             <span class="labelName">Message *</span>
-            <textarea class="formInput" name="message" cols="30" rows="5">
-            </textarea>
+            <div class="inputWrapper">
+              <textarea class="formInput" name="message" cols="30" rows="5">
+              </textarea>
+            </div>
           </label>
 
-          <button class="submitBtn" type="submit">SUBMIT FORM</button>
+          <span class="horLine"></span>
+
+          <div class="inputWrapper">
+            <button class="submitBtn" type="submit">SUBMIT FORM</button>
+          </div>
         </form>
       </div>
     </main>

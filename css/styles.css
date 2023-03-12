@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url(./../img/background.jpg) no-repeat center / cover;
+  background-color: gainsboro;
+}
+
+.main {
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formWrapper {
+  width: 800px;
+  display: flex;
+  flex-flow: wrap column;
+
+  border: 2px solid #000;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px,
+    rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+
+  padding: 1.5em;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 0 2px #000;
+}
+
+.formTitle {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.formDescription {
+  font-size: 16px;
+  padding: 1em 0;
+}
+
+.contactForm {
+  display: flex;
+  flex-flow: wrap column;
+  width: 100%;
+}
+
+.formLabel {
+  padding: 7px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inputWrapper {
+  width: 70%;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formInput {
+  border-radius: 8px;
+  border: 2px solid #000;
+  padding: 10px 5px;
+  margin: 0 5px;
+  width: 100%;
+}
+
+.horLine {
+  width: 100%;
+  border: 1px solid black;
+  margin: 15px 0;
+}
+
+.submitBtn {
+  padding: 0.5em 0;
+  border: 2px solid #000;
+  background: none;
+  font-weight: 700;
+  font-size: 16px;
+  width: 100%;
+}
+
+.valid {
+  background: green;
+}
+
+.invalid {
+  background: red;
+}
